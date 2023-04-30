@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Piedra, papel o tijera</title>
+		<script>
+			alert("we are going to play rock🪨, paper📃 and siccors✂️")
+			option = parseInt(prompt("escoge 1 para piedra🪨, 2 para papel📃 y 3 para tijeras✂️"))
+
+			if (option == 1 || option == 2 || option == 3) {
+				function minMax(min, max) {
+				return rta = Math.floor(Math.random() * (max - min) + min);
+				}
+				console.log(minMax(1, 4));
+				console.log(`The console choice was ${rta}`)
+
+				if (rta == 1) {
+					alert("la consola escogio 🪨")
+				}else if (rta == 2) {
+					alert("la consola escogio 📃")
+				}else {
+					alert("la consola escogio ✂️")
+				}
+
+				if ((rta == 1 && option == 3) || (rta == 2 && option == 1) || (rta == 3 && option == 2)) {
+					alert("la consola gana 😒")
+				
+				}else if ((option == 1 && rta == 3) || (option == 2 && rta == 1) || (option == 3 && rta == 2)){
+					alert("el usuario gana 😊")
+
+				}else {
+					alert("empate 😐")
+				}
+			}else {
+				alert("error por favor coloca un numero entero del 1 al 3")
+			}
+
+			
+		</script>
+	</head>
+	<body>
+		<h1>Piedra, papel o tijera</h1>
+	</body>
+</html>
